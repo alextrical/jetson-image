@@ -53,7 +53,8 @@ RUN rm -rf /build/Linux_for_Tegra/nv_tegra/l4t_deb_packages/nvidia-l4t-nvpmodel-
 
 # Install nvidia packages in the new rootfs
 WORKDIR /build/Linux_for_Tegra/
-RUN ./apply_binaries.sh
+# Skip a bunch of applications that need a display
+RUN ./apply_binaries.sh --factory 
 
 # Fix permissions
 RUN chroot /build/Linux_for_Tegra/rootfs/ /bin/bash -c "chown -R jetson:jetson /home/jetson && chmod 1777 /tmp"
