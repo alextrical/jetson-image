@@ -37,10 +37,15 @@ jobs:
 
           # Ubuntu 24.04 + L4T 36 (Orin family)
           - ubuntu: "24.04"
-            board: "jetson-orin-nano"
+            board: "jetson-orin-nano-super"
             device: "SD"
             l4t_version: "36"
             l4t_bsp: ${L4T36_BSP}
+          # - ubuntu: "24.04"
+          #   board: "jetson-orin-nano"
+          #   device: "SD"
+          #   l4t_version: "36"
+          #   l4t_bsp: ${L4T36_BSP}
           # - ubuntu: "24.04"
           #   board: "jetson-orin-nano"
           #   device: "USB"
