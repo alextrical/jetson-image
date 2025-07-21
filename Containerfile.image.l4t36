@@ -1,7 +1,7 @@
-# FROM ubuntu:jammy
-FROM nvcr.io/nvidia/l4t-base:r36.2.0
+FROM ubuntu:jammy
+# FROM nvcr.io/nvidia/l4t-base:r36.2.0
 
-LABEL org.opencontainers.image.authors="Badr @pythops"
+# LABEL org.opencontainers.image.authors="Badr @pythops"
 
 # Define the BSP version
 ARG BSP=https://developer.nvidia.com/downloads/embedded/l4t/r36_release_v4.3/release/Jetson_Linux_r36.4.3_aarch64.tbz2
