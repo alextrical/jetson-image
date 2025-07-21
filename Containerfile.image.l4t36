@@ -1,4 +1,5 @@
-FROM ubuntu:jammy
+# FROM ubuntu:jammy
+FROM nvcr.io/nvidia/l4t-base:r36.2.0
 
 LABEL org.opencontainers.image.authors="Badr @pythops"
 
